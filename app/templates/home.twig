@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Slim 3</title>
+        <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <link href='{{ base_url() }}/css/style.css' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <h1>Slim</h1>
+        <div>Please Login</div>
+
+<!-- <form role="form" name="login" id="login" method="get"> 
+<form class="form-horizontal" role="form" method="POST" action="{{ path_for('login') }}"> 
+-->
+<form method="POST" action="{{ path_for('login') }}"> 
+      <div class="row">
+        <div class="large-push-4 medium-4 columns">
+          <label><h4>Username</h4> </label>
+          <input type="text" placeholder="Username" name="username"
+                class="form-control" autofocus required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-offset-4 medium-4 columns">
+          <label><h4>Password</h4></label>
+   <input type="password" placeholder="Password" name="password"
+                class="form-control" required>
+        </div>
+      </div>
+   <button class="button hollow primary btn-block" type="submit">Log in</button>
+</form>
+
+<div>
+   <p>
+   {{ flash.getMessage('global')[0] }}
+</div>
+
+    </body>
+</html>
+        

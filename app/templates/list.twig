@@ -1,0 +1,16 @@
+{% extends 'layout.twig' %}
+
+{% set title = 'Users' %}
+{% block title %}{{title}}{% endblock %}
+
+{% block content %}
+<h1>{{title}}</h1>
+
+<ul>
+{% for user in users %}
+    <li>{{ user.username }}</li>
+{% endfor %}
+</ul>
+
+{% endblock %}
+

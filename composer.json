@@ -1,0 +1,25 @@
+{
+    "name": "My first Slim 3 Project",
+    "description": "Sample login with Slim & Twig & Foundation",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Margaret Gibson",
+            "email": "gibson@umn.edu"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/src"
+        }
+    },
+    "require": {
+        "slim/slim": "^3.0",
+        "twig/twig": "^1.18",
+        "slim/twig-view": "^2.1",
+        "slim/flash": "^0.1.0",
+        "illuminate/database": "~5.2",
+        "vlucas/valitron": "^1.2",
+        "slim/csrf": "^0.3.3"
+    }
+}
